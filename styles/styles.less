@@ -1,0 +1,394 @@
+/*
+Modification des headers
+*/
+
+// Couleurs de Twitter Bootstrap
+
+@primary: #007bff;
+@primary-dark: shade(@primary, 40%);
+@primary-light: #b8daff;
+@secondary: #6c757d;
+// Custom colors
+@secondary-light: #b5c0c9;
+@success: #28a745;
+@info: #17a2b8;
+@warning: #ffc107;
+@danger: #dc3545;
+@light: #f8f9fa;
+@dark: #343a40;
+
+
+// Couleurs tirées de https://colorhunt.co/palette/2763
+@grey-darker: #222831; // 216°, 31%, 19%
+@grey-dark: #393e46; // 	217°, 19%, 27%
+@grey-light: #636871; // 219°, 12%, 44%
+@background: #eeeeee;
+
+
+
+
+
+@icon: {
+  doc: 'file.png';
+  fclosed: 'folder.png';
+  fopen: 'folder_open.png';
+};
+
+// Imoortance du retour hatpique.
+@hover: 10%;
+@max-width: 980px;
+
+// Tout ce qui est inclus dans ce namespace sera marqué de !important
+
+#make-important {
+
+  // Mixins
+  // Couleurs de texte en blanc, suppressions des séparateurs. Flatification
+  .flatification {
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    background-image: none;
+  }
+
+  .hover-lighten(@color: #000000) {
+    &:hover {
+      background: lighten(@color, @hover);
+    }
+  }
+
+  .hover-darken(@color: #ffffff) {
+    &:hover {
+      background: darken(@color, @hover);
+    }
+  }
+
+  // Sets a max width and center the element
+  .max-width {
+    max-width: @max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    color: #212529;
+  }
+
+  #titlearea {
+    background: @grey-darker;
+    color: #ffffff;
+    border: none;
+    padding-bottom: 20px;
+  }
+
+  // Barre de navigation
+  #main-menu {
+    background: @grey-dark;
+    border: none;
+
+    li {
+
+      a {
+        .flatification();
+
+        // Au survol du menu/sous-menu
+        .hover-lighten(@grey-dark);
+
+        // Correction couleurs des fleches
+        span {
+          border-color: #ffffff transparent transparent transparent;
+        }
+      }
+
+      // Sous-menu
+      ul li a {
+        color: inherit;
+        .hover-darken();
+
+        // Correction couleurs des fleches
+        span {
+          border-color: #000000 transparent transparent transparent;
+        }
+      }
+    }
+  }
+
+  #nav-path ul {
+    background: @grey-dark;
+    border: none;
+    padding-left: 12px;
+
+    li {
+      background-image: none;
+
+      // Au survol du menu/sous-menu
+      .hover-lighten(@grey-dark);
+
+      a {
+        .flatification();
+      }
+    }
+  }
+
+  // Titre
+  div.header {
+
+    .headertitle {
+      .max-width();
+    }
+
+    background: @primary-dark;
+    color: #ffffff;
+
+    a {
+      color: #ffffff;
+    }
+  }
+
+  // Changement couleur des liens et désactivation des liens visités
+  .contents {
+    .max-width();
+    a {
+      color: @primary;
+
+      &:visited {
+        color: @primary;
+      }
+    }
+  }
+
+  .paramname {
+    color: @danger;
+  }
+
+  dl.warning {
+    border-color: @danger;
+  }
+
+  .memtitle, .memproto, .memdoc {
+    border-color: @primary;
+  }
+
+
+  .memtitle {
+    color: #ffffff;
+    background: @primary-dark;
+
+    // Suppression des ◆
+    span a {
+      display: none;
+    }
+  }
+
+  .memproto {
+    background: #ffffff;
+    border-bottom: 1px solid @primary;
+  }
+
+  .memdoc {
+    background-image: none;
+  }
+
+  // Passage des titres en noir
+  h2.groupheader {
+    color: inherit;
+  }
+
+  // Ajout d'une bordure sur les tableaux
+  table.memberdecls {
+    overflow: hidden;
+    border: 1px solid @secondary-light;
+    border-radius: 3px;
+
+    // Titre
+    .groupheader {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 5px;
+      padding-top: inherit;
+      padding-bottom: 10px;
+      border-bottom: 1px solid @secondary-light;
+    }
+
+    .memItemLeft, .memItemRight, .mdescLeft, .mdescRight {
+      background-color: inherit;
+    }
+
+
+
+    // Séparation des tableaux
+    &:first-of-type {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+  // Ajout des icones
+  each(@icon, {
+    .icon@{key} {
+      background-position-y: 0;
+      background-image: url(@value);
+    }
+  });
+
+  /**
+  Barre de recherche
+   */
+
+  // Input
+  #MSearchField {
+    //background: #575f6a;
+    // todo: mettre en variable
+    background: @grey-light;
+    color: @secondary-light;
+    width: 300px;
+    border-radius: 3px;
+
+    // Lorsque que le curseur est dans le champ
+    .MSearchBoxActive & {
+      color: #ffffff;
+    }
+  }
+
+  #MSearchSelect, #MSearchBox .right {
+    display: none;
+  }
+
+  // Augmentation de la taille de la recherche
+  #MSearchBox {
+    width: 325px;
+
+    .left {
+      background: none;
+    }
+  }
+
+  /**
+  Tableaux de fichiers
+   */
+
+  // Bordure globale. La classe est ajoutée dynamiquement en jQuery autour du tableau
+  .table-border {
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    border-collapse: collapse;
+    border-radius: 5px;
+  }
+
+  div.contents {
+
+    .classindex .ah {
+      border: none;
+      background: @primary-dark none;
+    }
+
+    .directory {
+      border-top-color: #b8daff;
+      border-bottom: none;
+
+      .icon {
+        background-color: @primary-dark;
+      }
+    }
+  }
+
+  table.directory tr {
+
+    // todo: passer en variable
+    // Ajout d'une bordure en bas...
+    background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+
+    .hover-darken();
+
+    // ...sauf pour le dernier element
+    &:last-child {
+      border-bottom: none;
+    }
+
+    // Augmente les marges intérieurs
+    td {
+      padding-top: 9px;
+      padding-bottom: 3px;
+    }
+
+  }
+
+
+
+
+  // Blocs de code
+  // todo relier avec .fragment plus bas
+  .fragment {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border-radius: 3px;
+    border-color: @secondary-light;
+
+    span.lineno {
+      border-right: none;
+      background-color: transparent;
+      color: @secondary;
+    }
+  }
+
+
+  .textblock {
+    .max-width();
+
+    h1, h2 {
+      border-bottom: 1px solid hsla(0,0%,50%,.33);
+      padding-bottom: 0.33em;
+    }
+
+    code {
+      background: #f2f2f2;
+      border-radius: 3px;
+      padding: 2px 4px;
+    }
+
+    .fragment {
+      background: #f2f2f2;
+      padding: 8px;
+      display: block;
+      border-radius: 3px;
+      border: none;
+    }
+
+    .mermaid {
+      svg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        .node {
+          circle, ellipse, polygon, rect {
+            fill: @primary-light;
+            stroke: transparent;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  // Center footer
+  .footer {
+    .max-width();
+
+    // Change border
+    hr& {
+      border-top: 1px solid @secondary-light;
+    }
+  }
+
+}
+
+// Passage de tout les attributs en !important
+& {
+  #make-important !important;
+}

@@ -1,0 +1,521 @@
+/*
+Modification des headers
+*/
+#make-important {
+  /**
+  Barre de recherche
+   */
+  /**
+  Tableaux de fichiers
+   */
+}
+#make-important .flatification {
+  color: #ffffff;
+  text-shadow: none;
+  border: none;
+  background-image: none;
+}
+#make-important .max-width {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#make-important body {
+  color: #212529;
+}
+#make-important #titlearea {
+  background: #222831;
+  color: #ffffff;
+  border: none;
+  padding-bottom: 20px;
+}
+#make-important #main-menu {
+  background: #393e46;
+  border: none;
+}
+#make-important #main-menu li a {
+  color: #ffffff;
+  text-shadow: none;
+  border: none;
+  background-image: none;
+}
+#make-important #main-menu li a:hover {
+  background: #505762;
+}
+#make-important #main-menu li a span {
+  border-color: #ffffff transparent transparent transparent;
+}
+#make-important #main-menu li ul li a {
+  color: inherit;
+}
+#make-important #main-menu li ul li a:hover {
+  background: #e6e6e6;
+}
+#make-important #main-menu li ul li a span {
+  border-color: #000000 transparent transparent transparent;
+}
+#make-important #nav-path ul {
+  background: #393e46;
+  border: none;
+  padding-left: 12px;
+}
+#make-important #nav-path ul li {
+  background-image: none;
+}
+#make-important #nav-path ul li:hover {
+  background: #505762;
+}
+#make-important #nav-path ul li a {
+  color: #ffffff;
+  text-shadow: none;
+  border: none;
+  background-image: none;
+}
+#make-important div.header {
+  background: #004a99;
+  color: #ffffff;
+}
+#make-important div.header .headertitle {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#make-important div.header a {
+  color: #ffffff;
+}
+#make-important .contents {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#make-important .contents a {
+  color: #007bff;
+}
+#make-important .contents a:visited {
+  color: #007bff;
+}
+#make-important .paramname {
+  color: #dc3545;
+}
+#make-important dl.warning {
+  border-color: #dc3545;
+}
+#make-important .memtitle,
+#make-important .memproto,
+#make-important .memdoc {
+  border-color: #007bff;
+}
+#make-important .memtitle {
+  color: #ffffff;
+  background: #004a99;
+}
+#make-important .memtitle span a {
+  display: none;
+}
+#make-important .memproto {
+  background: #ffffff;
+  border-bottom: 1px solid #007bff;
+}
+#make-important .memdoc {
+  background-image: none;
+}
+#make-important h2.groupheader {
+  color: inherit;
+}
+#make-important table.memberdecls {
+  overflow: hidden;
+  border: 1px solid #b5c0c9;
+  border-radius: 3px;
+}
+#make-important table.memberdecls .groupheader {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 5px;
+  padding-top: inherit;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b5c0c9;
+}
+#make-important table.memberdecls .memItemLeft,
+#make-important table.memberdecls .memItemRight,
+#make-important table.memberdecls .mdescLeft,
+#make-important table.memberdecls .mdescRight {
+  background-color: inherit;
+}
+#make-important table.memberdecls:first-of-type {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#make-important .icondoc {
+  background-position-y: 0;
+  background-image: url('file.png');
+}
+#make-important .iconfclosed {
+  background-position-y: 0;
+  background-image: url('folder.png');
+}
+#make-important .iconfopen {
+  background-position-y: 0;
+  background-image: url('folder_open.png');
+}
+#make-important #MSearchField {
+  background: #636871;
+  color: #b5c0c9;
+  width: 300px;
+  border-radius: 3px;
+}
+.MSearchBoxActive #make-important #MSearchField {
+  color: #ffffff;
+}
+#make-important #MSearchSelect,
+#make-important #MSearchBox .right {
+  display: none;
+}
+#make-important #MSearchBox {
+  width: 325px;
+}
+#make-important #MSearchBox .left {
+  background: none;
+}
+#make-important .table-border {
+  border: 1px solid #dcdcdc;
+  overflow: hidden;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+#make-important div.contents .classindex .ah {
+  border: none;
+  background: #004a99 none;
+}
+#make-important div.contents .directory {
+  border-top-color: #b8daff;
+  border-bottom: none;
+}
+#make-important div.contents .directory .icon {
+  background-color: #004a99;
+}
+#make-important table.directory tr {
+  background: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+}
+#make-important table.directory tr:hover {
+  background: #e6e6e6;
+}
+#make-important table.directory tr:last-child {
+  border-bottom: none;
+}
+#make-important table.directory tr td {
+  padding-top: 9px;
+  padding-bottom: 3px;
+}
+#make-important .fragment {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border-radius: 3px;
+  border-color: #b5c0c9;
+}
+#make-important .fragment span.lineno {
+  border-right: none;
+  background-color: transparent;
+  color: #6c757d;
+}
+#make-important .textblock {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#make-important .textblock h1,
+#make-important .textblock h2 {
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.33);
+  padding-bottom: 0.33em;
+}
+#make-important .textblock code {
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+#make-important .textblock .fragment {
+  background: #f2f2f2;
+  padding: 8px;
+  display: block;
+  border-radius: 3px;
+  border: none;
+}
+#make-important .textblock .mermaid svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#make-important .textblock .mermaid svg .node circle,
+#make-important .textblock .mermaid svg .node ellipse,
+#make-important .textblock .mermaid svg .node polygon,
+#make-important .textblock .mermaid svg .node rect {
+  fill: #b8daff;
+  stroke: transparent;
+}
+#make-important .footer {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr#make-important .footer {
+  border-top: 1px solid #b5c0c9;
+}
+.flatification {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border: none !important;
+  background-image: none !important;
+}
+.max-width {
+  max-width: 980px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body {
+  color: #212529 !important;
+}
+#titlearea {
+  background: #222831 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding-bottom: 20px !important;
+}
+#main-menu {
+  background: #393e46 !important;
+  border: none !important;
+}
+#main-menu li a {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border: none !important;
+  background-image: none !important;
+}
+#main-menu li a:hover {
+  background: #505762 !important;
+}
+#main-menu li a span {
+  border-color: #ffffff transparent transparent transparent !important;
+}
+#main-menu li ul li a {
+  color: inherit !important;
+}
+#main-menu li ul li a:hover {
+  background: #e6e6e6 !important;
+}
+#main-menu li ul li a span {
+  border-color: #000000 transparent transparent transparent !important;
+}
+#nav-path ul {
+  background: #393e46 !important;
+  border: none !important;
+  padding-left: 12px !important;
+}
+#nav-path ul li {
+  background-image: none !important;
+}
+#nav-path ul li:hover {
+  background: #505762 !important;
+}
+#nav-path ul li a {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border: none !important;
+  background-image: none !important;
+}
+div.header {
+  background: #004a99 !important;
+  color: #ffffff !important;
+}
+div.header .headertitle {
+  max-width: 980px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+div.header a {
+  color: #ffffff !important;
+}
+.contents {
+  max-width: 980px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.contents a {
+  color: #007bff !important;
+}
+.contents a:visited {
+  color: #007bff !important;
+}
+.paramname {
+  color: #dc3545 !important;
+}
+dl.warning {
+  border-color: #dc3545 !important;
+}
+.memtitle,
+.memproto,
+.memdoc {
+  border-color: #007bff !important;
+}
+.memtitle {
+  color: #ffffff !important;
+  background: #004a99 !important;
+}
+.memtitle span a {
+  display: none !important;
+}
+.memproto {
+  background: #ffffff !important;
+  border-bottom: 1px solid #007bff !important;
+}
+.memdoc {
+  background-image: none !important;
+}
+h2.groupheader {
+  color: inherit !important;
+}
+table.memberdecls {
+  overflow: hidden !important;
+  border: 1px solid #b5c0c9 !important;
+  border-radius: 3px !important;
+}
+table.memberdecls .groupheader {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  margin-left: 5px !important;
+  padding-top: inherit !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #b5c0c9 !important;
+}
+table.memberdecls .memItemLeft,
+table.memberdecls .memItemRight,
+table.memberdecls .mdescLeft,
+table.memberdecls .mdescRight {
+  background-color: inherit !important;
+}
+table.memberdecls:first-of-type {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.icondoc {
+  background-position-y: 0 !important;
+  background-image: url('file.png') !important;
+}
+.iconfclosed {
+  background-position-y: 0 !important;
+  background-image: url('folder.png') !important;
+}
+.iconfopen {
+  background-position-y: 0 !important;
+  background-image: url('folder_open.png') !important;
+}
+/**
+  Barre de recherche
+   */
+#MSearchField {
+  background: #636871 !important;
+  color: #b5c0c9 !important;
+  width: 300px !important;
+  border-radius: 3px !important;
+}
+.MSearchBoxActive #MSearchField {
+  color: #ffffff !important;
+}
+#MSearchSelect,
+#MSearchBox .right {
+  display: none !important;
+}
+#MSearchBox {
+  width: 325px !important;
+}
+#MSearchBox .left {
+  background: none !important;
+}
+/**
+  Tableaux de fichiers
+   */
+.table-border {
+  border: 1px solid #dcdcdc !important;
+  overflow: hidden !important;
+  border-collapse: collapse !important;
+  border-radius: 5px !important;
+}
+div.contents .classindex .ah {
+  border: none !important;
+  background: #004a99 none !important;
+}
+div.contents .directory {
+  border-top-color: #b8daff !important;
+  border-bottom: none !important;
+}
+div.contents .directory .icon {
+  background-color: #004a99 !important;
+}
+table.directory tr {
+  background: #ffffff !important;
+  border-bottom: 1px solid #dcdcdc !important;
+}
+table.directory tr:hover {
+  background: #e6e6e6 !important;
+}
+table.directory tr:last-child {
+  border-bottom: none !important;
+}
+table.directory tr td {
+  padding-top: 9px !important;
+  padding-bottom: 3px !important;
+}
+.fragment {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  background-color: transparent !important;
+  border-radius: 3px !important;
+  border-color: #b5c0c9 !important;
+}
+.fragment span.lineno {
+  border-right: none !important;
+  background-color: transparent !important;
+  color: #6c757d !important;
+}
+.textblock {
+  max-width: 980px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.textblock h1,
+.textblock h2 {
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.33) !important;
+  padding-bottom: 0.33em !important;
+}
+.textblock code {
+  background: #f2f2f2 !important;
+  border-radius: 3px !important;
+  padding: 2px 4px !important;
+}
+.textblock .fragment {
+  background: #f2f2f2 !important;
+  padding: 8px !important;
+  display: block !important;
+  border-radius: 3px !important;
+  border: none !important;
+}
+.textblock .mermaid svg {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.textblock .mermaid svg .node circle,
+.textblock .mermaid svg .node ellipse,
+.textblock .mermaid svg .node polygon,
+.textblock .mermaid svg .node rect {
+  fill: #b8daff !important;
+  stroke: transparent !important;
+}
+.footer {
+  max-width: 980px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+hr.footer {
+  border-top: 1px solid #b5c0c9 !important;
+}
